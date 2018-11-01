@@ -10,11 +10,6 @@ import UIKit
 import Firebase
 
 class FourthViewController: UIViewController {
-
-    @IBOutlet weak var oldPasswordTextField: UITextField!
-    @IBOutlet weak var newPasswordTextField: UITextField!
-    @IBOutlet weak var reEnterpasswordTextField: UITextField!
-
     
     override func viewDidLoad() {
         super.viewDidLoad()

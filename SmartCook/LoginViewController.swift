@@ -55,6 +55,21 @@ class LoginViewController: UIViewController {
         }
     }
     
+    @IBAction func forgotPasswordButton(_ sender: Any) {
+        let email = emailTextField.text
+        
+        Auth.auth().sendPasswordReset(withEmail: email!) { (error) in
+            if error != nil {
+                print(error!)
+            }
+            else {
+                let alert = UIAlertController(title: "Email sent", message: "Check your email for the link to reset password.", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
+    }
+    
     func displayErrorMessage(_ errorMessage: String) {
         let alertController = UIAlertController(title: "Error", message: errorMessage, preferredStyle: UIAlertControllerStyle.alert)
         
