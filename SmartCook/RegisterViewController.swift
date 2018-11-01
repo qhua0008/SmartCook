@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import Firebase
 
-class RegisterViewController: UITabBarController {
+class RegisterViewController: UIViewController {
+
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var reEnterpasswordTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +26,17 @@ class RegisterViewController: UITabBarController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func registerButton(_ sender: Any) {
+        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+            
+            if error != nil {
+                print(error!)
+            } else {
+                self.navigationController?.popViewController(animated: true)
+            }
+        }        
+    }
+    
     /*
     // MARK: - Navigation
 

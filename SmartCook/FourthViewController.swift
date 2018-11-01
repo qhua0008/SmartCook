@@ -11,6 +11,11 @@ import Firebase
 
 class FourthViewController: UIViewController {
 
+    @IBOutlet weak var oldPasswordTextField: UITextField!
+    @IBOutlet weak var newPasswordTextField: UITextField!
+    @IBOutlet weak var reEnterpasswordTextField: UITextField!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,9 +27,22 @@ class FourthViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
+    @IBAction func deleteAccountButton(_ sender: Any) {
+        let user = Auth.auth().currentUser
+        
+        user?.delete { error in
+            if error != nil {
+                print(error!)
+            } else {
+                self.navigationController?.popViewController(animated: true)
+                self.dismiss(animated: true, completion: nil)
+            }
+        }
     }
-
+    
+    @IBAction func resetPasswordButton(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 
