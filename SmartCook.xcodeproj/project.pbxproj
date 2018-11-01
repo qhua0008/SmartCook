@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2F296AF1449D242CCD941D0C /* Pods_SmartCookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57511B881A91F78535FAC0CF /* Pods_SmartCookUITests.framework */; };
+		49638542218AC54F00FAB8BE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49638541218AC54F00FAB8BE /* RegisterViewController.swift */; };
 		49A31DCD21899AA100E010A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A31DCC21899AA100E010A2 /* AppDelegate.swift */; };
 		49A31DD221899AA100E010A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A31DD021899AA100E010A2 /* Main.storyboard */; };
 		49A31DD521899AA100E010A2 /* SmartCook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49A31DD321899AA100E010A2 /* SmartCook.xcdatamodeld */; };
@@ -47,6 +48,7 @@
 		039495EBDD70AEE39B3543CD /* Pods-SmartCookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCookTests.release.xcconfig"; path = "Target Support Files/Pods-SmartCookTests/Pods-SmartCookTests.release.xcconfig"; sourceTree = "<group>"; };
 		1CD392265E28E367FCE847F7 /* Pods_SmartCook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartCook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5AB766647FE4CE6164429B /* Pods-SmartCookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCookUITests.debug.xcconfig"; path = "Target Support Files/Pods-SmartCookUITests/Pods-SmartCookUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		49638541218AC54F00FAB8BE /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		49A31DC921899AA100E010A2 /* SmartCook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartCook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A31DCC21899AA100E010A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49A31DD121899AA100E010A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				49A31DFF21899BCF00E010A2 /* SecondViewController.swift */,
 				49A31E0121899BDB00E010A2 /* ThirdViewController.swift */,
 				49A31DFD21899B9000E010A2 /* FirstViewController.swift */,
+				49638541218AC54F00FAB8BE /* RegisterViewController.swift */,
 				49A31DD621899AA200E010A2 /* Assets.xcassets */,
 				49A31E462189FE0800E010A2 /* GoogleService-Info.plist */,
 				49A31DD821899AA200E010A2 /* LaunchScreen.storyboard */,
@@ -403,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49638542218AC54F00FAB8BE /* RegisterViewController.swift in Sources */,
 				49A31E0421899CF000E010A2 /* LoginViewController.swift in Sources */,
 				49A31E4B218A061C00E010A2 /* TabBarController.swift in Sources */,
 				49A31E0021899BCF00E010A2 /* SecondViewController.swift in Sources */,

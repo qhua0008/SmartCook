@@ -1,5 +1,5 @@
 //
-//  FourthViewController.swift
+//  RegisterViewController.swift
 //  SmartCook
 //
 //  Created by Aditi on 01/11/18.
@@ -7,9 +7,8 @@
 //
 
 import UIKit
-import Firebase
 
-class FourthViewController: UIViewController {
+class RegisterViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +19,6 @@ class FourthViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
     }
 
     /*
