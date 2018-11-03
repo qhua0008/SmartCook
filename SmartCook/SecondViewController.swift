@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 import UserNotifications
 
 class SecondViewController: UIViewController {
@@ -15,6 +16,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var humdityLabel: UILabel!
     @IBOutlet weak var foodImageView: UIImageView!
+    @IBOutlet weak var smallView: UIView!
     
     var temp: Double?
     var humdity: Double?
@@ -25,6 +27,7 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        smallView.layer.cornerRadius = 10
         //retrieve data from database
         databaseRef.observe(.value, with: { (snapshot) in
             if(snapshot.exists()) {

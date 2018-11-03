@@ -8,17 +8,50 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class ThirdViewController: UIViewController, RecipeGetterDelegate {
 
+    var recipe: RecipeGetter!
+    @IBOutlet var tableView: UITableView!
+    @IBOutlet var searchBar: UISearchBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        recipe = RecipeGetter(delegate: self)
+        recipe.getRecipe(ingredient: "chicken")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func didGetRecipe(recipes: [Recipe]) {
+        // This method is called asynchronously, which means it won't execute in the main queue.
+        // ALl UI code needs to execute in the main queue, which is why we're wrapping the code
+        // that updates all the labels in a dispatch_async() call.
+        DispatchQueue.main.async() {
+
+        }
+        
+    }
+    
+    func didNotGetRecipe(error: NSError) {
+        print("\(error)")
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0 // your number of cell here
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        // your cell coding
+        return UITableViewCell()
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        // cell selected code here
     }
 
     /*
