@@ -28,13 +28,13 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Threshold Humdity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3S-3P-kmZ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Threshold Humidity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3S-3P-kmZ">
                                         <rect key="frame" x="0.0" y="227" width="239" height="24"/>
                                         <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Humdity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cns-D7-wkk">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Humidity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cns-D7-wkk">
                                         <rect key="frame" x="0.0" y="158" width="239" height="24"/>
                                         <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -137,7 +137,6 @@
                         <viewLayoutGuide key="safeArea" id="xvv-qe-1nF"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Info" image="info" selectedImage="info" id="acK-KM-Ck7"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="foodImageView" destination="AQd-6y-8nV" id="jRh-uU-Nz2"/>
                         <outlet property="humdityLabel" destination="V8L-4S-Gpj" id="PLn-ED-ymK"/>
@@ -251,6 +250,63 @@
             </objects>
             <point key="canvasLocation" x="354" y="1215"/>
         </scene>
+        <!--Search-->
+        <scene sceneID="4h4-yT-HY3">
+            <objects>
+                <viewController id="zKP-S4-zQ0" customClass="ThirdViewController" customModule="SmartCook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c28-Ag-Vgj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VGt-6c-F2e">
+                                <rect key="frame" x="16" y="325" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBv-0b-ZKq">
+                                <rect key="frame" x="121" y="390" width="133" height="43"/>
+                                <color key="backgroundColor" red="0.19333118199999999" green="0.71847748759999996" blue="0.92696821689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="22"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerButton:" destination="zO3-0V-M3a" eventType="touchUpInside" id="2TK-dg-x5s"/>
+                                    <segue destination="VjB-H3-Zz1" kind="show" id="Pz9-o5-KcN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Recipes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iwh-2v-rxf">
+                                <rect key="frame" x="16" y="258" width="343" height="42"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Iwh-2v-rxf" firstAttribute="top" secondItem="cmy-DK-8ia" secondAttribute="top" constant="194" id="3jo-f8-6XA"/>
+                            <constraint firstItem="fBv-0b-ZKq" firstAttribute="leading" secondItem="cmy-DK-8ia" secondAttribute="leading" constant="121" id="bFh-ds-jma"/>
+                            <constraint firstItem="Iwh-2v-rxf" firstAttribute="leading" secondItem="VGt-6c-F2e" secondAttribute="leading" id="bLp-l1-sct"/>
+                            <constraint firstItem="VGt-6c-F2e" firstAttribute="top" secondItem="Iwh-2v-rxf" secondAttribute="bottom" constant="25" id="e2R-GJ-0oC"/>
+                            <constraint firstItem="Iwh-2v-rxf" firstAttribute="trailing" secondItem="c28-Ag-Vgj" secondAttribute="trailingMargin" id="eHW-4K-6jC"/>
+                            <constraint firstItem="Iwh-2v-rxf" firstAttribute="leading" secondItem="c28-Ag-Vgj" secondAttribute="leadingMargin" id="fFk-wG-uQk"/>
+                            <constraint firstItem="VGt-6c-F2e" firstAttribute="centerX" secondItem="fBv-0b-ZKq" secondAttribute="centerX" id="hEt-s5-LUy"/>
+                            <constraint firstItem="fBv-0b-ZKq" firstAttribute="top" secondItem="VGt-6c-F2e" secondAttribute="bottom" constant="35" id="oAr-km-EUj"/>
+                            <constraint firstItem="Iwh-2v-rxf" firstAttribute="trailing" secondItem="VGt-6c-F2e" secondAttribute="trailing" id="wPM-JU-mjS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cmy-DK-8ia"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search" id="Wgy-OY-dVI"/>
+                    <connections>
+                        <outlet property="searchTextField" destination="VGt-6c-F2e" id="aUI-jj-dLU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WPj-06-vCl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2224.8000000000002" y="1205.8470764617691"/>
+        </scene>
         <!--Recipes-->
         <scene sceneID="VTh-ja-qYT">
             <objects>
@@ -259,14 +315,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" text="" placeholder="Search Recipes" id="rZt-2B-XlS">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeCell" textLabel="8Kq-dI-fBZ" style="IBUITableViewCellStyleDefault" id="brI-RI-Q0G">
-                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="brI-RI-Q0G" id="UGi-GZ-77w">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -281,6 +332,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="vNA-rZ-Va5" kind="show" identifier="RecipeSegue" id="lWp-xT-JDU"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -289,16 +343,41 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Recipes" image="recipes" selectedImage="recipes" id="Zs3-EZ-fYx"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="wIs-7i-Ug4" id="2cN-tE-98c"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vFQ-It-0kz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="wIs-7i-Ug4">
+                    <connections>
+                        <outlet property="delegate" destination="VjB-H3-Zz1" id="yvg-eS-XYf"/>
+                        <outlet property="searchContentsController" destination="VjB-H3-Zz1" id="Eav-WK-qA5"/>
+                        <outlet property="searchResultsDataSource" destination="VjB-H3-Zz1" id="ax0-qK-14B"/>
+                        <outlet property="searchResultsDelegate" destination="VjB-H3-Zz1" id="CY8-Zj-B7S"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1306" y="1215"/>
+            <point key="canvasLocation" x="3112.8000000000002" y="1205.8470764617691"/>
+        </scene>
+        <!--Recipe-->
+        <scene sceneID="0RQ-fL-KBe">
+            <objects>
+                <viewController title="Recipe" id="vNA-rZ-Va5" customClass="RecipeViewController" customModule="SmartCook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b99-ad-7yf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="MKB-ht-ggw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YdS-rv-3XJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4013.5999999999999" y="1205.8470764617691"/>
         </scene>
         <!--Settings-->
         <scene sceneID="iW0-Cz-Yhq">
             <objects>
-                <viewController id="fcN-LL-SdX" customClass="FourthViewController" customModule="SmartCook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Settings" id="fcN-LL-SdX" customClass="FourthViewController" customModule="SmartCook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MW3-zY-Thi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -325,7 +404,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="settings" selectedImage="settings" id="0jN-5l-fCi"/>
                     <navigationItem key="navigationItem" title="Settings" id="ukk-b7-eN7"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Xf-Ga-u3G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -369,7 +447,6 @@
                         <viewLayoutGuide key="safeArea" id="NQW-Xp-EKh"/>
                     </view>
                     <navigationItem key="navigationItem" title="Videos" id="M8p-tP-khX"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BI4-yi-LwN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -503,6 +580,7 @@
         <scene sceneID="b1O-MU-xJq">
             <objects>
                 <tabBarController id="pTP-pd-kPJ" customClass="TabBarController" customModule="SmartCook" customModuleProvider="target" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="ikm-91-2Yp">
                         <barButtonItem key="leftBarButtonItem" title="Logout" image="logout" id="Grd-kn-8Ah">
                             <connections>
@@ -518,7 +596,7 @@
                     <connections>
                         <segue destination="w7n-ZZ-gVR" kind="relationship" relationship="viewControllers" id="CaQ-57-Tec"/>
                         <segue destination="xDx-8j-TDt" kind="relationship" relationship="viewControllers" id="T35-bR-WZH"/>
-                        <segue destination="VjB-H3-Zz1" kind="relationship" relationship="viewControllers" id="xY1-zP-gmW"/>
+                        <segue destination="7ZK-fJ-KR5" kind="relationship" relationship="viewControllers" id="ejy-Ym-RmX"/>
                         <segue destination="fcN-LL-SdX" kind="relationship" relationship="viewControllers" id="Kuz-0c-mf5"/>
                     </connections>
                 </tabBarController>
@@ -577,6 +655,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sr3-5e-iHO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1306.4000000000001" y="-222.63868065967017"/>
+        </scene>
+        <!--Recipes-->
+        <scene sceneID="MUY-V6-lZ1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7ZK-fJ-KR5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Recipes" image="recipes" selectedImage="recipes" id="7Iu-SZ-sPa"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AUZ-S4-bO0">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.19333118200302124" green="0.71847748756408691" blue="0.92696821689605713" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zKP-S4-zQ0" kind="relationship" relationship="rootViewController" id="nlL-Qk-oZb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="do4-lm-FUC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1285.5999999999999" y="1205.8470764617691"/>
         </scene>
     </scenes>
     <resources>

@@ -1,5 +1,5 @@
 //
-//  ThirdViewController.swift
+//  RecipeViewController.swift
 //  SmartCook
 //
 //  Created by Aditi on 03/11/18.
@@ -7,15 +7,20 @@
 //
 
 import UIKit
+import WebKit
 
-class ThirdViewController: UIViewController {
+class RecipeViewController: UIViewController, ViewRecipeDelegate {
 
-    @IBOutlet weak var searchTextField: UITextField!
+    var recipeURL: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let webView = WKWebView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))
+        self.view.addSubview(webView)
+        let url = URL(string: recipeURL!)
+        webView.load(URLRequest(url: url!))
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,11 +28,10 @@ class ThirdViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let desitnationVC = segue.destination as! ThirdTableViewController
-        desitnationVC.ingredient = searchTextField.text
+    func viewRecipe(url: String) {
+        self.recipeURL = url
     }
-
+    
     /*
     // MARK: - Navigation
 

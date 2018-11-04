@@ -21,7 +21,7 @@ class SecondViewController: UIViewController {
     var temp: Double?
     var humdity: Double?
     
-     var databaseRef = Database.database().reference().child("raspio")
+     var databaseRef = Database.database().reference().child("tah")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,10 +38,10 @@ class SecondViewController: UIViewController {
                     let snapshot: DataSnapshot = obj as! DataSnapshot
                     if let childSnapshot = snapshot.value as? [String : AnyObject]
                     {
-                        if let t = childSnapshot["Temperature"] {
+                        if let t = childSnapshot["temperature"] {
                             self.temp = t as? Double
                         }
-                        if let r = childSnapshot["Humdity"] {
+                        if let r = childSnapshot["humidity"] {
                             self.humdity = r as? Double
                         }
                     }
@@ -53,12 +53,14 @@ class SecondViewController: UIViewController {
                     if (temp >= 40)
                     {
                         self.temperatureLabel.textColor = UIColor.red
+                        //let burntFood = UIImage(named: "burntFood")
                         self.foodImageView = UIImageView(image: #imageLiteral(resourceName: "burntFood"))
                         self.notification(option: 1)
                     }
                     else
                     {
                         self.temperatureLabel.textColor = UIColor.green
+                        //let food = UIImage(named: "food")
                         self.foodImageView = UIImageView(image: #imageLiteral(resourceName: "food"))
                     }
                 }
@@ -68,6 +70,7 @@ class SecondViewController: UIViewController {
                     if (humdity >= 40)
                     {
                         self.humdityLabel.textColor = UIColor.red
+                        //let boilingWater = UIImage(named: "boilingWater")
                         self.foodImageView = UIImageView(image: #imageLiteral(resourceName: "boilingWater"))
                         self.notification(option: 2)
                     }

@@ -8,23 +8,29 @@
 
 import UIKit
 
+protocol ViewRecipeDelegate: class  {
+    func viewRecipe(url: String)
+}
+
 class ThirdTableViewController: UITableViewController, RecipeGetterDelegate {
 
     var recipe: RecipeGetter!
     var recipeList = [Recipe]()
-    
-    
+    weak var delegate: ViewRecipeDelegate?
+    var ingredient: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         recipe = RecipeGetter(delegate: self)
-        recipe.getRecipe(ingredient: "chicken")
+        recipe.getRecipe(ingredient: ingredient!)
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
     }
     
     func didGetRecipe(recipes: [Recipe]) {
@@ -109,6 +115,11 @@ class ThirdTableViewController: UITableViewController, RecipeGetterDelegate {
         UIGraphicsEndImageContext()
         
         return newImage!
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let r: String = recipeList[indexPath.row].url!
+        delegate?.viewRecipe(url: r)
     }
 
     /*
