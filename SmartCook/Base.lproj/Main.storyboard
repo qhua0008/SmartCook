@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bOb-dK-o0R">
-                                <rect key="frame" x="68" y="177" width="239" height="313"/>
+                                <rect key="frame" x="68" y="151" width="239" height="313"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Temperature" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0u-EV-zh8">
                                         <rect key="frame" x="0.0" y="23" width="239" height="24"/>
@@ -52,7 +52,7 @@
                                         <color key="textColor" red="0.041697228429999997" green="0.55086245649999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40°C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hj9-G3-rIK" userLabel="Threshold Temperature Label">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="87.8°C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hj9-G3-rIK" userLabel="Threshold Temperature Label">
                                         <rect key="frame" x="0.0" y="114" width="239" height="35"/>
                                         <fontDescription key="fontDescription" name="KohinoorDevanagari-Light" family="Kohinoor Devanagari" pointSize="25"/>
                                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -64,7 +64,7 @@
                                         <color key="textColor" red="0.041697228429999997" green="0.55086245649999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40g/m3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ll-2P-Lpj" userLabel="Threshold Humdity Label">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80g/m3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ll-2P-Lpj" userLabel="Threshold Humdity Label">
                                         <rect key="frame" x="0.0" y="251" width="239" height="35"/>
                                         <fontDescription key="fontDescription" name="KohinoorDevanagari-Light" family="Kohinoor Devanagari" pointSize="25"/>
                                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -110,14 +110,14 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1M-cD-42n">
-                                <rect key="frame" x="0.0" y="108" width="375" height="42"/>
+                                <rect key="frame" x="0.0" y="82" width="375" height="42"/>
                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="AQd-6y-8nV">
-                                <rect key="frame" x="94" y="490" width="187" height="120"/>
+                                <rect key="frame" x="94" y="464" width="187" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="187" id="6xJ-Rs-O5n"/>
                                     <constraint firstAttribute="height" constant="120" id="UzY-h8-IlI"/>
@@ -131,12 +131,12 @@
                             <constraint firstItem="q1M-cD-42n" firstAttribute="leading" secondItem="xvv-qe-1nF" secondAttribute="leading" id="M6A-HG-YxU"/>
                             <constraint firstItem="bOb-dK-o0R" firstAttribute="centerX" secondItem="GWF-1W-eV1" secondAttribute="centerX" id="Wgt-9t-r59"/>
                             <constraint firstItem="q1M-cD-42n" firstAttribute="trailing" secondItem="xvv-qe-1nF" secondAttribute="trailing" id="a3N-E0-xJZ"/>
-                            <constraint firstItem="bOb-dK-o0R" firstAttribute="centerY" secondItem="GWF-1W-eV1" secondAttribute="centerY" id="d1l-Cj-KcF"/>
+                            <constraint firstItem="bOb-dK-o0R" firstAttribute="centerY" secondItem="GWF-1W-eV1" secondAttribute="centerY" constant="-26" id="d1l-Cj-KcF"/>
                             <constraint firstItem="bOb-dK-o0R" firstAttribute="top" secondItem="q1M-cD-42n" secondAttribute="bottom" constant="27" id="xq2-dG-tXo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xvv-qe-1nF"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Info" image="info" selectedImage="info" id="acK-KM-Ck7"/>
+                    <navigationItem key="navigationItem" title="Info" id="M8O-S9-gJJ"/>
                     <connections>
                         <outlet property="foodImageView" destination="AQd-6y-8nV" id="jRh-uU-Nz2"/>
                         <outlet property="humdityLabel" destination="V8L-4S-Gpj" id="PLn-ED-ymK"/>
@@ -146,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wvH-fg-hmK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1306.4000000000001" y="442.12893553223392"/>
+            <point key="canvasLocation" x="2245.5999999999999" y="442.12893553223392"/>
         </scene>
         <!--Register-->
         <scene sceneID="RgB-xd-tgG">
@@ -157,50 +157,50 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4n-D7-SB6">
-                                <rect key="frame" x="16" y="223" width="343" height="24"/>
+                                <rect key="frame" x="16" y="179" width="343" height="24"/>
                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Kd-Pc-0D1" userLabel="Email Text Field">
-                                <rect key="frame" x="16" y="252" width="343" height="30"/>
+                                <rect key="frame" x="16" y="208" width="343" height="30"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAP-gJ-O4A">
-                                <rect key="frame" x="16" y="303" width="343" height="24"/>
+                                <rect key="frame" x="16" y="259" width="343" height="24"/>
                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c1k-uH-ADq" userLabel="Email Text Field">
-                                <rect key="frame" x="16" y="332" width="343" height="30"/>
+                                <rect key="frame" x="16" y="288" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Re-enter Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53F-qH-Fg9">
-                                <rect key="frame" x="16" y="386" width="343" height="24"/>
+                                <rect key="frame" x="16" y="342" width="343" height="24"/>
                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T4g-ft-w7z" userLabel="Email Text Field">
-                                <rect key="frame" x="16" y="415" width="343" height="30"/>
+                                <rect key="frame" x="16" y="371" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xza-XZ-BCi">
-                                <rect key="frame" x="16" y="123" width="343" height="42"/>
+                                <rect key="frame" x="16" y="79" width="343" height="42"/>
                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGE-EU-xUw">
-                                <rect key="frame" x="121" y="501" width="133" height="43"/>
+                                <rect key="frame" x="121" y="457" width="133" height="43"/>
                                 <color key="backgroundColor" red="0.19333118199999999" green="0.71847748759999996" blue="0.92696821689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="22"/>
                                 <state key="normal" title="Register">
@@ -402,14 +402,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="X6H-c2-2m9"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="settings" selectedImage="settings" id="0jN-5l-fCi"/>
                     <navigationItem key="navigationItem" title="Settings" id="ukk-b7-eN7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Xf-Ga-u3G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1305" y="1984"/>
+            <point key="canvasLocation" x="2244" y="1983.9580209895055"/>
         </scene>
-        <!--Videos-->
+        <!--Cooking Area-->
         <scene sceneID="x2c-dn-G1l">
             <objects>
                 <viewController id="FW1-EW-esq" customClass="FirstViewController" customModule="SmartCook" customModuleProvider="target" sceneMemberID="viewController">
@@ -417,55 +416,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqW-Cq-Amz">
-                                <rect key="frame" x="96" y="247" width="183" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.19333118199999999" green="0.71847748759999996" blue="0.92696821689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="22"/>
-                                <state key="normal" title="Capture Video">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="loginButton:" destination="Z0e-Gn-tAZ" eventType="touchUpInside" id="4fL-aK-69P"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jbh-Es-QWd">
-                                <rect key="frame" x="96" y="346" width="183" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.19333118199999999" green="0.71847748759999996" blue="0.92696821689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="22"/>
-                                <state key="normal" title="View Library">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="loginButton:" destination="Z0e-Gn-tAZ" eventType="touchUpInside" id="y00-fd-Mg5"/>
-                                    <segue destination="ukU-x3-AQ3" kind="show" id="WWA-N8-CvZ"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="55k-mO-g3M">
+                                <rect key="frame" x="67" y="269" width="240" height="240"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cooking Area" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aC-Cl-S15">
+                                <rect key="frame" x="0.0" y="161" width="375" height="42"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="55k-mO-g3M" firstAttribute="leading" secondItem="NQW-Xp-EKh" secondAttribute="leading" constant="67" id="8Dx-U2-AK1"/>
+                            <constraint firstAttribute="trailing" secondItem="0aC-Cl-S15" secondAttribute="trailing" id="HlY-Xa-Zd7"/>
+                            <constraint firstItem="NQW-Xp-EKh" firstAttribute="bottom" secondItem="55k-mO-g3M" secondAttribute="bottom" constant="109" id="JoW-po-ExB"/>
+                            <constraint firstItem="0aC-Cl-S15" firstAttribute="top" secondItem="NQW-Xp-EKh" secondAttribute="top" constant="97" id="WcY-Sv-mC3"/>
+                            <constraint firstItem="55k-mO-g3M" firstAttribute="top" secondItem="0aC-Cl-S15" secondAttribute="bottom" constant="66" id="ggi-Ln-VNr"/>
+                            <constraint firstItem="0aC-Cl-S15" firstAttribute="centerX" secondItem="55k-mO-g3M" secondAttribute="centerX" id="m6z-Ll-Sho"/>
+                            <constraint firstItem="0aC-Cl-S15" firstAttribute="leading" secondItem="cru-H6-b7d" secondAttribute="leading" id="nDc-kP-XjB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="NQW-Xp-EKh"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Videos" id="M8p-tP-khX"/>
+                    <navigationItem key="navigationItem" title="Cooking Area" id="M8p-tP-khX"/>
+                    <connections>
+                        <outlet property="liveImage" destination="55k-mO-g3M" id="Wgy-Ku-Kig"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BI4-yi-LwN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2245.5999999999999" y="-222.63868065967017"/>
-        </scene>
-        <!--First View Controller-->
-        <scene sceneID="uL1-GN-Jo1">
-            <objects>
-                <viewController id="ukU-x3-AQ3" customClass="FirstViewController" customModule="SmartCook" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="g2k-CZ-ug1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="JyC-jM-q3z"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sbu-H1-aK0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3250" y="-223"/>
         </scene>
         <!--Login-->
         <scene sceneID="DWl-yY-Ftb">
@@ -476,38 +457,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPK-JJ-syY">
-                                <rect key="frame" x="16" y="220" width="343" height="24"/>
+                                <rect key="frame" x="16" y="176" width="343" height="24"/>
                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZpC-pz-xii">
-                                <rect key="frame" x="16" y="301" width="343" height="24"/>
+                                <rect key="frame" x="16" y="257" width="343" height="24"/>
                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LQ5-Rx-EcE" userLabel="Email Text Field">
-                                <rect key="frame" x="16" y="249" width="343" height="30"/>
+                                <rect key="frame" x="16" y="205" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="arX-5y-4he" userLabel="Password Text Field">
-                                <rect key="frame" x="16" y="330" width="343" height="30"/>
+                                <rect key="frame" x="16" y="286" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAE-fw-LQc">
-                                <rect key="frame" x="16" y="142" width="343" height="42"/>
+                                <rect key="frame" x="16" y="98" width="343" height="42"/>
                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkS-Rv-uWM">
-                                <rect key="frame" x="121" y="414" width="133" height="43"/>
+                                <rect key="frame" x="121" y="370" width="133" height="43"/>
                                 <color key="backgroundColor" red="0.19333118200302124" green="0.71847748756408691" blue="0.92696821689605713" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="22"/>
                                 <state key="normal" title="Login">
@@ -518,7 +499,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xzh-Fm-d5S">
-                                <rect key="frame" x="125.5" y="477" width="128" height="27"/>
+                                <rect key="frame" x="125.5" y="433" width="128" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="Register as New User?">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -528,7 +509,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QR4-ce-Drh">
-                                <rect key="frame" x="16" y="368" width="101" height="27"/>
+                                <rect key="frame" x="16" y="324" width="101" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="Forgot Password?">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -595,9 +576,9 @@
                     </tabBar>
                     <connections>
                         <segue destination="w7n-ZZ-gVR" kind="relationship" relationship="viewControllers" id="CaQ-57-Tec"/>
-                        <segue destination="xDx-8j-TDt" kind="relationship" relationship="viewControllers" id="T35-bR-WZH"/>
+                        <segue destination="uMe-EJ-8R6" kind="relationship" relationship="viewControllers" id="T35-bR-WZH"/>
                         <segue destination="7ZK-fJ-KR5" kind="relationship" relationship="viewControllers" id="ejy-Ym-RmX"/>
-                        <segue destination="fcN-LL-SdX" kind="relationship" relationship="viewControllers" id="Kuz-0c-mf5"/>
+                        <segue destination="nko-Cy-Tzt" kind="relationship" relationship="viewControllers" id="Kuz-0c-mf5"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HYS-ve-Rrf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -631,11 +612,11 @@
             </objects>
             <point key="canvasLocation" x="-1439.2" y="109.29535232383809"/>
         </scene>
-        <!--Videos-->
+        <!--Cooking Area-->
         <scene sceneID="dsH-Rz-dWR">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w7n-ZZ-gVR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Videos" image="capture" selectedImage="capture" id="hGA-at-4gb"/>
+                    <tabBarItem key="tabBarItem" title="Cooking Area" image="cookingArea" selectedImage="cookingArea" id="hGA-at-4gb"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ckb-ja-FgL">
@@ -681,9 +662,58 @@
             </objects>
             <point key="canvasLocation" x="1285.5999999999999" y="1205.8470764617691"/>
         </scene>
+        <!--Info-->
+        <scene sceneID="z9i-RH-z8W">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uMe-EJ-8R6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Info" image="info" selectedImage="info" id="acK-KM-Ck7"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ySp-FJ-fnR">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.19333118200302124" green="0.71847748756408691" blue="0.92696821689605713" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xDx-8j-TDt" kind="relationship" relationship="rootViewController" id="k1N-YM-fW1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="49e-FL-qTa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1306.4000000000001" y="442.12893553223392"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="M6H-ms-xQb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nko-Cy-Tzt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings" selectedImage="settings" id="0jN-5l-fCi"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VFh-Ld-bf3">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.19333118200302124" green="0.71847748756408691" blue="0.92696821689605713" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fcN-LL-SdX" kind="relationship" relationship="rootViewController" id="lYh-8B-clT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zeJ-5Z-dph" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1304.8" y="1983.9580209895055"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="capture" width="25" height="25"/>
+        <image name="cookingArea" width="25" height="25"/>
         <image name="food" width="414" height="275"/>
         <image name="info" width="25" height="25"/>
         <image name="logout" width="25" height="25"/>
@@ -691,7 +721,7 @@
         <image name="settings" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Td9-tk-2Dc"/>
+        <segue reference="z5J-l1-jDm"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

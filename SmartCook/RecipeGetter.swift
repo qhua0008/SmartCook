@@ -9,7 +9,7 @@
 import Foundation
 
 protocol RecipeGetterDelegate {
-    func didGetRecipe(weather: String)
+    func didGetRecipe(recipes: [Recipe])
     func didNotGetRecipe(error: NSError)
 }
 
@@ -26,7 +26,7 @@ class RecipeGetter {
         // This is a pretty simple networking task, so the shared session will do.
         let session = URLSession.shared
         let ingr = ingredient.replacingOccurrences(of: " ", with: "%20")
-        let RecipeRequestURL = URL(string: "\(EdamamBaseURL)?app_id=\(EdamamAPPId)&app_key=\(EdamamAPIKey)&ingr=\(ingr)")!
+        let RecipeRequestURL = URL(string: "\(EdamamBaseURL)?&q=\(ingr)&app_id=\(EdamamAPPId)&app_key=\(EdamamAPIKey)")!
         
         // The data task retrieves the data.
         let dataTask = session.dataTask(with: RecipeRequestURL){
@@ -46,10 +46,14 @@ class RecipeGetter {
                     let json = try JSONSerialization.jsonObject(
                         with: data!,
                         options: []) as! [String:Any]
-                    let weather = json["weather"] as! [[String:Any]]
-                    let weatherMain = weather[0]
-                    print(weatherMain["main"] ?? "Weather service failed")
-                    self.delegate.didGetRecipe(weather: weatherMain["main"]! as! String)
+                    let hits = json["hits"] as! [[String:Any]]
+                    var recipeList = [Recipe]()
+                    for hit in hits {
+                        let recipe = hit["recipe"] as! [String:Any]
+                        recipeList.append(Recipe(label: recipe["label"] as! String, url: recipe["url"] as! String, image: recipe["image"] as! String))
+                    }
+                    //print(weatherMain["main"] ?? "Weather service failed")
+                    self.delegate.didGetRecipe(recipes: recipeList)
                     
                 }catch let jsonError as NSError {
                     // An error occurred while trying to convert the data into a Swift dictionary.

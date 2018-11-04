@@ -2,8 +2,8 @@
 //  SecondViewController.swift
 //  SmartCook
 //
-//  Created by Aditi on 31/10/18.
-//  Copyright © 2018 Aditi. All rights reserved.
+//  Created by Aditi and Qianyi Huang on 31/10/18.
+//  Copyright © 2018 Aditi and Qianyi Huang. All rights reserved.
 //
 
 import UIKit
@@ -50,33 +50,30 @@ class SecondViewController: UIViewController {
                 if (self.temp != nil) {
                     let temp = Double(round(Double(self.temp!)*100)/100)
                     self.temperatureLabel.text = String(temp) + "°C"
-                    if (temp >= 40)
+                    if (temp >= 87.8)
                     {
                         self.temperatureLabel.textColor = UIColor.red
-                        //let burntFood = UIImage(named: "burntFood")
-                        self.foodImageView = UIImageView(image: #imageLiteral(resourceName: "burntFood"))
+                        self.foodImageView.image = UIImage(named: "burntFood")
                         self.notification(option: 1)
                     }
                     else
                     {
-                        self.temperatureLabel.textColor = UIColor.green
-                        //let food = UIImage(named: "food")
-                        self.foodImageView = UIImageView(image: #imageLiteral(resourceName: "food"))
+                        self.temperatureLabel.textColor = UIColor(red: 0, green: 0.5, blue: 0, alpha: 1)
+                        self.foodImageView.image = UIImage(named: "food")
                     }
                 }
                 if (self.humdity != nil) {
                     let humdity = Double(round(Double(self.humdity!)*100)/100)
                     self.humdityLabel.text = String(humdity) + "g/m3"
-                    if (humdity >= 40)
+                    if (humdity >= 80)
                     {
                         self.humdityLabel.textColor = UIColor.red
-                        //let boilingWater = UIImage(named: "boilingWater")
-                        self.foodImageView = UIImageView(image: #imageLiteral(resourceName: "boilingWater"))
+                        self.foodImageView.image = UIImage(named: "boilingWater")
                         self.notification(option: 2)
                     }
                     else
                     {
-                        self.humdityLabel.textColor = UIColor.green
+                        self.humdityLabel.textColor = UIColor(red: 0, green: 0.5, blue: 0, alpha: 1)
                     }
                 }
             }

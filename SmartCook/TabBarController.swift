@@ -2,8 +2,8 @@
 //  TabBarController.swift
 //  SmartCook
 //
-//  Created by Aditi on 01/11/18.
-//  Copyright © 2018 Aditi. All rights reserved.
+//  Created by Aditi and Qianyi Huang on 01/11/18.
+//  Copyright © 2018 Aditi and Qianyi Huang. All rights reserved.
 //
 
 import UIKit

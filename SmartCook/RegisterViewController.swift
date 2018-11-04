@@ -2,8 +2,8 @@
 //  RegisterViewController.swift
 //  SmartCook
 //
-//  Created by Aditi on 01/11/18.
-//  Copyright © 2018 Aditi. All rights reserved.
+//  Created by Aditi and Qianyi Huang on 01/11/18.
+//  Copyright © 2018 Aditi and Qianyi Huang. All rights reserved.
 //
 
 import UIKit
@@ -27,14 +27,39 @@ class RegisterViewController: UIViewController {
     }
 
     @IBAction func registerButton(_ sender: Any) {
-        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
-            
-            if error != nil {
-                print(error!)
-            } else {
-                self.navigationController?.popViewController(animated: true)
+        guard let password = passwordTextField.text else {
+            displayErrorMessage("Please enter a password")
+            return
+        }
+        guard let rePassword = reEnterpasswordTextField.text else {
+            displayErrorMessage("Please re-enter a password")
+            return
+        }
+        guard let email = emailTextField.text else {
+            displayErrorMessage("Please enter an email address")
+            return
+        }
+        if (password == rePassword) {
+            Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
+                
+                if error != nil {
+                    print(error!)
+                } else {
+                    self.navigationController?.popViewController(animated: true)
+                }
             }
-        }        
+        }
+        else {
+            displayErrorMessage("Password does not match")
+        }
+    }
+    
+    func displayErrorMessage(_ errorMessage: String) {
+        let alertController = UIAlertController(title: "Error", message: errorMessage, preferredStyle: UIAlertControllerStyle.alert)
+        
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
+        
+        self.present(alertController, animated: true, completion: nil)
     }
     
     /*
