@@ -21,7 +21,7 @@ class FirstViewController: UIViewController {
         let blue = UIColor(red: 0.2, green: 0.7, blue: 0.9, alpha: 1)
         liveImage.layer.borderColor = blue.cgColor
         
-        Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(updateImage), userInfo: nil, repeats: true)
+        Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(updateImage), userInfo: nil, repeats: true)
         // Do any additional setup after loading the view.
         
     }
