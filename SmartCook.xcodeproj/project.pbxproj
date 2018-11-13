@@ -12,7 +12,7 @@
 		492EC477218D068B003EDADC /* ThirdTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492EC476218D068B003EDADC /* ThirdTableViewController.swift */; };
 		492EC47D218D375B003EDADC /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492EC47C218D375B003EDADC /* Recipe.swift */; };
 		4958AEF6218ED8F70082C73D /* RecipeGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4958AEF5218ED8F70082C73D /* RecipeGetter.swift */; };
-		4958AEFA218EE0710082C73D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4958AEF9218EE0710082C73D /* GoogleService-Info.plist */; };
+		4958AEFC218EE2440082C73D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4958AEFB218EE2440082C73D /* GoogleService-Info.plist */; };
 		49638542218AC54F00FAB8BE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49638541218AC54F00FAB8BE /* RegisterViewController.swift */; };
 		49A31DCD21899AA100E010A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A31DCC21899AA100E010A2 /* AppDelegate.swift */; };
 		49A31DD221899AA100E010A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A31DD021899AA100E010A2 /* Main.storyboard */; };
@@ -56,7 +56,7 @@
 		492EC476218D068B003EDADC /* ThirdTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTableViewController.swift; sourceTree = "<group>"; };
 		492EC47C218D375B003EDADC /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		4958AEF5218ED8F70082C73D /* RecipeGetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeGetter.swift; sourceTree = "<group>"; };
-		4958AEF9218EE0710082C73D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../MIT/SEM_3/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4958AEFB218EE2440082C73D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		49638541218AC54F00FAB8BE /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		49A31DC921899AA100E010A2 /* SmartCook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartCook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A31DCC21899AA100E010A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 				49A31E0321899CF000E010A2 /* LoginViewController.swift */,
 				49638541218AC54F00FAB8BE /* RegisterViewController.swift */,
 				49A31DD821899AA200E010A2 /* LaunchScreen.storyboard */,
-				4958AEF9218EE0710082C73D /* GoogleService-Info.plist */,
+				4958AEFB218EE2440082C73D /* GoogleService-Info.plist */,
 				492EC472218B7B96003EDADC /* Assets.xcassets */,
 				49A31DDB21899AA200E010A2 /* Info.plist */,
 				49A31DD321899AA100E010A2 /* SmartCook.xcdatamodeld */,
@@ -310,7 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A31DDA21899AA200E010A2 /* LaunchScreen.storyboard in Resources */,
-				4958AEFA218EE0710082C73D /* GoogleService-Info.plist in Resources */,
+				4958AEFC218EE2440082C73D /* GoogleService-Info.plist in Resources */,
 				492EC473218B7B96003EDADC /* Assets.xcassets in Resources */,
 				49A31DD221899AA100E010A2 /* Main.storyboard in Resources */,
 			);

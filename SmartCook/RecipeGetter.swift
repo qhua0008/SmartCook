@@ -52,7 +52,6 @@ class RecipeGetter {
                         let recipe = hit["recipe"] as! [String:Any]
                         recipeList.append(Recipe(label: recipe["label"] as! String, url: recipe["url"] as! String, image: recipe["image"] as! String))
                     }
-                    //print(weatherMain["main"] ?? "Weather service failed")
                     self.delegate.didGetRecipe(recipes: recipeList)
                     
                 }catch let jsonError as NSError {
